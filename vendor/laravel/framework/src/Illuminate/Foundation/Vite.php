@@ -2,6 +2,7 @@
 
 namespace Illuminate\Foundation;
 
+use Log;
 use Exception;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Collection;
@@ -263,7 +264,7 @@ class Vite implements Htmlable
      * @return string
      */
     protected function makeTagForChunk($src, $url, $chunk, $manifest)
-    {
+    {   Log::info("url:"); Log::info($url);
         if (
             $this->nonce === null
             && $this->integrityKey !== false
@@ -399,13 +400,13 @@ class Vite implements Htmlable
      * @return string
      */
     protected function makeStylesheetTagWithAttributes($url, $attributes)
-    {
+    {   Log::info($url);
         $attributes = $this->parseAttributes(array_merge([
             'rel' => 'stylesheet',
             'href' => $url,
             'nonce' => $this->nonce ?? false,
         ], $attributes));
-
+        Log::info('<link '.implode(' ', $attributes).' />');
         return '<link '.implode(' ', $attributes).' />';
     }
 
@@ -489,7 +490,7 @@ class Vite implements Htmlable
         }
 
         $chunk = $this->chunk($this->manifest($buildDirectory), $asset);
-
+        
         return $this->assetPath($buildDirectory.'/'.$chunk['file']);
     }
 

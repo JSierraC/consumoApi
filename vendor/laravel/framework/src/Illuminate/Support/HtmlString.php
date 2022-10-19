@@ -3,7 +3,7 @@
 namespace Illuminate\Support;
 
 use Illuminate\Contracts\Support\Htmlable;
-
+use Log;
 class HtmlString implements Htmlable
 {
     /**
@@ -21,6 +21,8 @@ class HtmlString implements Htmlable
      */
     public function __construct($html = '')
     {
+        Log::info("html");
+        Log::info($html);
         $this->html = $html;
     }
 
