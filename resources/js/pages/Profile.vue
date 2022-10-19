@@ -1,10 +1,8 @@
 <template>
-  <div class="account-view">
-    <div class="container">
-      <h4>Welcome, {{this.loggedInEmail}}!</h4>
-      <p class="text-primary">Double-click form to register and/or update information.</p>
-      <div class="row shadow-lg">
-        <div class="col rounded-start form-side">
+     <div class="row">
+    <h4>My Profile, {{this.loggedInEmail}}!</h4>
+      <div class="col-lg-7 align-self-center">
+        <div class="col rounded-start">
           <h5 class="heading text-white">User Information</h5>
 
             <!-- form -->
@@ -70,7 +68,6 @@
         <div class="col rounded-end image-side"></div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
