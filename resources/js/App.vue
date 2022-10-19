@@ -5,7 +5,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <a href="#" class="logo">
-                        <img src="logo.png" alt="">
+                        <img :src="img" alt="">
                     </a>
                     
                     <ul class="nav" v-if="!this.isLoggedIn">
@@ -40,6 +40,7 @@
   
  </template>
 <script>
+import img from "../statics/images/logo.png"
 
 export default {
     name: "App",
@@ -54,13 +55,12 @@ export default {
             axios.get('/sanctum/csrf-cookie').then(response => {
                 axios.post('/api/logout')
                     .then(response => {
-                        console.log(response.data);
                         if (response.data.success) {
                             sessionStorage.clear();
                             this.isLoggedIn = false;
                             this.$router.push({name: 'Home'});
                         } else {
-                            console.log(response)
+                        
                         }
                     })
                     .catch(function (error) {
@@ -72,15 +72,11 @@ export default {
         checkIfLoggedIn(){
             let sessionEmail = sessionStorage.getItem("email");
             let sessionuserId = sessionStorage.getItem("user_id");
-            console.log(sessionEmail);
-            console.log(sessionuserId);
             if(sessionEmail==null && sessionuserId==null){
-                console.log("if yendo a home");
                 this.isLoggedIn = false;
                 this.$router.push({name: 'Home'});
             }else{
                 this.isLoggedIn = true;
-                console.log("else yendo a Dashboard")
                 this.$router.push({name: 'Dashboard'});
             }
         }

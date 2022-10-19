@@ -85,9 +85,9 @@
 export default {
   data() {
     return {
-      name: "jsierra",
-      email: "juan.sierra@cajamag.com.co",
-      password: "12345678",
+      name: "",
+      email: "",
+      password: "",
       error: null,
     };
   },
