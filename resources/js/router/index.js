@@ -2,17 +2,14 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../pages/Home.vue'
 import Register from '../pages/Register.vue'
 import Login from '../pages/Login.vue'
-
-/*  import AccountView from '../components/account/AccountView.vue'
 import Dashboard from '../components/Dashboard.vue'
-import LikedPokemons from '../components/LikedPokemons.vue'
-import HatedPokemons from '../components/HatedPokemons.vue'
-import OtherUsers from '../components/OtherUsers.vue'
-*/
+import LikesPokemons from '../pages/LikesPokemons.vue'
+import Profile from '../pages/Profile.vue'
+
 const routes = [
     {
         name: 'Home',
-        path: '/revisar',
+        path: '/',
         component: Home
     },
     {
@@ -25,35 +22,24 @@ const routes = [
         path: '/login',
         component: Login
     },
-  /*  
+   
     {
         name: 'Dashboard',
         path: '/dashboard',
         component: Dashboard
     },
     {
-        name: 'AccountView',
-        path: '/account-view',
-        component: AccountView
+        name: 'Profile',
+        path: '/profile',
+        component: Profile
     },
 
     {
-        name: 'LikedPokemons',
-        path: '/liked-pokemons',
-        component: LikedPokemons
-    },
-
-    {
-        name: 'HatedPokemons',
-        path: '/hated-pokemons',
-        component: HatedPokemons
-    },
-    {
-        name: 'OtherUsers',
-        path: '/other-users',
-        component: OtherUsers
+        name: 'Likes',
+        path: '/likes-pokemons',
+        component: LikesPokemons
     }
-*/
+
 ]
 
 const router = createRouter({

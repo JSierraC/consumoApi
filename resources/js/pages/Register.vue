@@ -19,7 +19,7 @@
                     id="name"
                     type="email"
                     class="form-control"
-                    v-model="username"
+                    v-model="name"
                     required
                     autofocus
                     autocomplete="off"
@@ -85,9 +85,9 @@
 export default {
   data() {
     return {
-      username: "",
-      email: "",
-      password: "",
+      name: "jsierra",
+      email: "juan.sierra@cajamag.com.co",
+      password: "12345678",
       error: null,
     };
   },
@@ -98,12 +98,12 @@ export default {
         axios.get("/sanctum/csrf-cookie").then((response) => {
           axios
             .post("api/register", {
-              username: this.username,
+              name: this.name,
               email: this.email,
               password: this.password,
             })
             .then((response) => {
-              if (response.data.success) {
+              if (response.data.access_token) {
                 //window.location.href = "/login"
                 this.$router.push({ name: "Login" });
               } else {

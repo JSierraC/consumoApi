@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PokemonController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,7 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::post('register',[AuthController::class, 'register']);
-Route::post('login',[AuthController::class, 'login']);
-Route::post('userInfo',[AuthController::class, 'infouser'])->middleware('auth:sanctum');
-Route::get('logout',[AuthController::class, 'logout'])->middleware('auth:sanctum');    
+Route::post('register',[App\Http\Controllers\AuthController::class, 'register']);
+Route::post('login',[App\Http\Controllers\AuthController::class, 'login'])->name('login');
+Route::post('userInfo',[App\Http\Controllers\AuthController::class, 'infouser'])->middleware('auth:sanctum');
+Route::get('logout',[App\Http\Controllers\AuthController::class, 'logout'])->middleware('auth:sanctum'); 
+Route::post('/pokemons/like/{user_id}/{pokemon_id}', [PokemonController::class,'likePokemon']); 

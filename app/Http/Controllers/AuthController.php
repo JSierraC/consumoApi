@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Hash;
+use Auth;
+
 
 class AuthController extends Controller
 {
@@ -49,7 +51,8 @@ class AuthController extends Controller
 
         return response()->json([
             'access_token'=>$token,
-            'token_type'=>'Bearer'
+            'token_type'=>'Bearer',
+            'user_id'=>$user->id
         ]);
     }
 
@@ -66,3 +69,6 @@ class AuthController extends Controller
 
     }
 }
+
+
+?>

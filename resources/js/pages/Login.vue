@@ -84,7 +84,7 @@ export default {
             })
             .then((response) => {
               console.log("login response: ",response.data);
-              if (response.data.success) {
+              if (response.data.access_token) {
                 sessionStorage.setItem("email", this.email);
                 sessionStorage.setItem("user_id", response.data.user_id);
                 this.$router.push({name: 'Dashboard'});
