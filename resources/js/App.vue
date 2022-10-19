@@ -5,7 +5,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <a href="#" class="logo">
-                        <img :src="img" alt="">
+                        <img src="logo.png" alt="">
                     </a>
                     
                     <ul class="nav" v-if="!this.isLoggedIn">
@@ -40,8 +40,6 @@
   
  </template>
 <script>
-import img from "../statics/images/logo.png"
-
 export default {
     name: "App",
     data() {

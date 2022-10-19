@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\LikedPokemon;
 use App\Models\User;
+use Session;
 
 class PokemonController extends Controller
 {
@@ -57,6 +58,26 @@ class PokemonController extends Controller
 
         return $user;
         
+    }
+
+    public function logout()
+    {
+        try {
+            Session::flush();
+            $success = true;
+            $message = 'Successfully logged out';
+        } catch (\Illuminate\Database\QueryException $ex) {
+            $success = false;
+            $message = $ex->getMessage();
+        }
+
+        // response
+        $response = [
+            'success' => $success,
+            'message' => $message,
+        ];
+        return response()->json($response);
+        ///return $redirect()->route('front');
     }
 }
 
