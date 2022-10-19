@@ -1,9 +1,38 @@
 <template>
+    <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="#" class="logo">
+                        <img src="logo.png" alt="">
+                    </a>
+                    
+                    <ul class="nav" v-if="!this.isLoggedIn">
+                        <li><router-link to="/login" >Login</router-link></li>
+                        <li><router-link to="/register" >Register</router-link></li>
+                    </ul>   
+                    <ul class="nav" v-if="this.isLoggedIn">
+                        <li><router-link to="/likes-pokemons" >My Favorite</router-link></li>
+                        <li><router-link to="/profile" >My Profile</router-link></li>
+                        <li><a @click="this.logout">Logout</a></li>
+                    </ul>
+                    
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
     <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
+            {{this.isLoggedIn}}
             <router-view/>
+            
         </div>
       </div>
     </div>
@@ -16,7 +45,7 @@ export default {
     name: "App",
     data() {
         return {
-            isLoggedIn: false,
+            isLoggedIn: true,
         }
     },
     methods: {
@@ -25,6 +54,7 @@ export default {
             axios.get('/sanctum/csrf-cookie').then(response => {
                 axios.post('/api/logout')
                     .then(response => {
+                        console.log(response.data);
                         if (response.data.success) {
                             sessionStorage.clear();
                             this.isLoggedIn = false;
@@ -40,30 +70,24 @@ export default {
         },
 
         checkIfLoggedIn(){
-
-
+            let sessionEmail = sessionStorage.getItem("email");
+            let sessionuserId = sessionStorage.getItem("user_id");
+            console.log(sessionEmail);
+            console.log(sessionuserId);
+            if(sessionEmail==null && sessionuserId==null){
+                console.log("if yendo a home");
+                this.isLoggedIn = false;
+                this.$router.push({name: 'Home'});
+            }else{
+                this.isLoggedIn = true;
+                console.log("else yendo a Dashboard")
+                this.$router.push({name: 'Dashboard'});
+            }
         }
     },
 
     created() {
-        console.log("created");
-        let sessionEmail = sessionStorage.getItem("email");
-        let sessionuserId = sessionStorage.getItem("user_id");
-        console.log("sessionEmail && sessionuserId");
-        console.log(sessionEmail && sessionuserId);
-        if(sessionEmail && sessionuserId){
-            this.isLoggedIn = true;
-            this.$router.push({name: 'Dashboard'});
-        }
-        else{
-            this.isLoggedIn = false;
-            console.log("route home");
-            this.$router.push({name: 'Home'});
-        }
-
-        console.log("Session email: ", sessionEmail);
-        console.log("Is logged in: ", this.isLoggedIn);
-
+        this.checkIfLoggedIn();
     },
 }
 </script>

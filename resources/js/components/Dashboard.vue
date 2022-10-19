@@ -1,5 +1,4 @@
 <template>
-  <Header/>
   <div>
     <h4>Welcome, {{this.loggedInEmail}}</h4>
     <div class="container">
@@ -46,17 +45,16 @@
 </template>
 
 <script>
-import Header from './Header.vue'
+
 import DetailsModal from "./DetailsModal.vue";
 
 export default {
   props: ["pokemons"],
-  components:{Header,DetailsModal},
+  components:{DetailsModal},
 
   data() {
     return {
       pokemonsData: [],
-      limit : 28,
       loggedInEmail: "",
       user_id: 0,
 
@@ -153,13 +151,9 @@ export default {
       this.fetchData(this.next);
     },
     likePokemon(value) {
-      
-      
-
       this.newPokemon.pokemon_id = value.id;
       this.newPokemon.name = value.name;
       this.newPokemon.user_id = this.user_id;
-
      axios
         .post("api/pokemons/like/"+this.user_id+"/"+value.id, {
           pokemon: this.newPokemon,
@@ -174,25 +168,15 @@ export default {
         })
 
     },
-
   },
   mounted() {
-
-    if (localStorage.getItem('reloaded')) {
-        localStorage.removeItem('reloaded');
-    } else {
-        localStorage.setItem('reloaded', '1');
-        location.reload();
-    }
-
     this.fetchData();
     this.loggedInEmail = sessionStorage.getItem("email");
     this.user_id = sessionStorage.getItem("user_id");
-    //console.log("session email: ", sessionStorage.getItem("email"));
   },
 
   created(){
-      console.log(sessionStorage.getItem("user_id"))
+      
   }
 };
 </script>

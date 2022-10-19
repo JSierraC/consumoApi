@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\LikedPokemon;
+use App\Models\User;
 
 class PokemonController extends Controller
 {
@@ -29,6 +30,33 @@ class PokemonController extends Controller
            
         }
 
+    }
+
+    public function fetchLikedPokemons($user_id){
+        return $pokemons = LikedPokemon::where('user_id', $user_id)->get();
+    }
+
+     public function getUserById($user_id){
+        try {
+            $u = User::findOrFail($user_id);
+
+        } catch (Exception $e) {
+            
+        }
+
+        return response()->json($u->ToArray());
+    }
+
+    public function updateProfile($user_id, Request $request){
+        $user = User::find($user_id);
+        
+        $user->address = $request->detail['address'];
+        $user->birthdate = $request->detail['birthdate'];
+        $user->city = $request->detail['city'];
+        $user->save();
+
+        return $user;
+        
     }
 }
 
