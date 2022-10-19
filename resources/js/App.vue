@@ -5,7 +5,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <a href="#" class="logo">
-                        <img src="logo.png" alt="">
+                        <img  :src="`/logo.png`" alt="">
                     </a>
                     
                     <ul class="nav" v-if="!this.isLoggedIn">
