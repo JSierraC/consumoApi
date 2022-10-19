@@ -6,21 +6,16 @@
               </div>
               <div class="item"  v-for="(pokemon, index) in this.likedPokemons" :key="index">
                 <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>{{pokemon.pokemon_id}}</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>{{pokemon.name}}</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                  <li>{{pokemon.pokemon_id}} <h4>{{pokemon.name}}</h4></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <router-link to="/dashboard" >Back List</router-link>
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-12">
+        <div class="main-button">
+          <router-link to="/dashboard" >Back List</router-link>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
