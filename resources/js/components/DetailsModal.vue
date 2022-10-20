@@ -3,13 +3,12 @@
    <div class="modal-dialog">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title fw-bold" >{{name.toUpperCase()}}</h5>
+         <h5 class="modal-title text-black fw-bold" >{{name}}</h5>
          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
        </div>
-       <div class="modal-body p-5">
+       <div class="modal-body">
          <div class="container">
-
-            <table class="details-table ">
+           <table class="details-table ">
               <tr>
                 <td class="fw-bold">Type:</td>
                 <td>{{type}}</td>
@@ -33,12 +32,10 @@
                 </td>
               </tr>
             </table>
-
         </div>
        </div>
        <div class="modal-footer">
-         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
-
+         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
        </div>
      </div>
    </div>
@@ -64,14 +61,6 @@ export default {
 }
 </script>
 <style scoped>
-  .modal-body{
-    padding-left: auto;
-    padding-right: auto;
-  }
-  table{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
-  }
+  
 
 </style>

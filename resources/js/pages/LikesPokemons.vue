@@ -10,11 +10,11 @@
                 </ul>
               </div>
             </div>
-      <div class="col-lg-12">
-        <div class="main-button">
-          <router-link to="/dashboard" >Back List</router-link>
-        </div>
-      </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <router-link to="/dashboard" >Back List</router-link>
+              </div>
+            </div>
     </div>
 </template>
 
