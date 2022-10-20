@@ -32,7 +32,6 @@
         <div class="page-content">
             {{this.isLoggedIn}}
             <router-view/>
-            
         </div>
       </div>
     </div>
@@ -68,6 +67,7 @@ export default {
         },
 
         checkIfLoggedIn(){
+            console.log("checkIfLoggedIn");
             let sessionEmail = sessionStorage.getItem("email");
             let sessionuserId = sessionStorage.getItem("user_id");
             if(sessionEmail==null && sessionuserId==null){

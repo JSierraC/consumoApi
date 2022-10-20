@@ -8,7 +8,7 @@
                       <div class="row">
                         <div class="col-lg-12">
                           <div class="heading-section">
-                            <h4><em>Your Most Popular</em> Clips</h4>
+                            <h4><em>Your Most Popular</em> Pokemons</h4>
                           </div>
                         </div>
                         <div v-for="(value, index) in pokemonsData" :key="index" class="col-lg-3 col-sm-6">

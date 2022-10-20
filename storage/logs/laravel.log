@@ -742,3 +742,1307 @@
 #53 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #54 {main}
 "} 
+[2022-10-20 14:53:43] local.ERROR: Vite manifest not found at: /var/www/html/netgrid/public/build/manifest.json {"view":{"view":"/var/www/html/netgrid/resources/views/inicio.blade.php","data":[]},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Vite manifest not found at: /var/www/html/netgrid/public/build/manifest.json at /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:523)
+[stacktrace]
+#0 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(213): Illuminate\\Foundation\\Vite->manifest()
+#1 /var/www/html/netgrid/resources/views/inicio.blade.php(13): Illuminate\\Foundation\\Vite->__invoke()
+#2 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('...')
+#3 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#5 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#6 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(139): Illuminate\\View\\Engines\\CompilerEngine->get()
+#7 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#10 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent()
+#11 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(833): Illuminate\\Http\\Response->__construct()
+#12 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(802): Illuminate\\Routing\\Router::toResponse()
+#13 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(725): Illuminate\\Routing\\Router->prepareResponse()
+#14 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#17 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#19 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#21 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#23 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#24 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#26 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#28 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(726): Illuminate\\Pipeline\\Pipeline->then()
+#30 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(703): Illuminate\\Routing\\Router->runRouteWithinStack()
+#31 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Routing\\Router->runRoute()
+#32 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(656): Illuminate\\Routing\\Router->dispatchToRoute()
+#33 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#34 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#35 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#37 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#38 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#40 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#41 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#43 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#45 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#47 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#49 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#51 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#52 /var/www/html/netgrid/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#53 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#54 {main}
+
+[previous exception] [object] (Exception(code: 0): Vite manifest not found at: /var/www/html/netgrid/public/build/manifest.json at /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:523)
+[stacktrace]
+#0 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(213): Illuminate\\Foundation\\Vite->manifest()
+#1 /var/www/html/netgrid/storage/framework/views/5f977ce4d96ed9afd4839eb0988811d0e83a3639.php(13): Illuminate\\Foundation\\Vite->__invoke()
+#2 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(109): require('...')
+#3 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(110): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire()
+#5 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#6 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(139): Illuminate\\View\\Engines\\CompilerEngine->get()
+#7 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\\View\\View->getContents()
+#8 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\\View\\View->renderContents()
+#9 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\\View\\View->render()
+#10 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\\Http\\Response->setContent()
+#11 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(833): Illuminate\\Http\\Response->__construct()
+#12 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(802): Illuminate\\Routing\\Router::toResponse()
+#13 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(725): Illuminate\\Routing\\Router->prepareResponse()
+#14 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#17 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#19 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#21 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#23 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#24 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#26 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#28 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(726): Illuminate\\Pipeline\\Pipeline->then()
+#30 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(703): Illuminate\\Routing\\Router->runRouteWithinStack()
+#31 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(667): Illuminate\\Routing\\Router->runRoute()
+#32 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Routing/Router.php(656): Illuminate\\Routing\\Router->dispatchToRoute()
+#33 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#34 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#35 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#37 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#38 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#40 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#41 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#43 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#45 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#47 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#49 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#51 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#52 /var/www/html/netgrid/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#53 /var/www/html/netgrid/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
+#54 {main}
+"} 
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:53:50] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:50] local.INFO: url:  
+[2022-10-20 14:53:50] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:53:50] local.INFO: html  
+[2022-10-20 14:53:50] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:53:55] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:53:55] local.INFO: url:  
+[2022-10-20 14:53:55] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:53:55] local.INFO: html  
+[2022-10-20 14:53:55] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:54:30] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:30] local.INFO: url:  
+[2022-10-20 14:54:30] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:54:30] local.INFO: html  
+[2022-10-20 14:54:30] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:54:47] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:54:47] local.INFO: url:  
+[2022-10-20 14:54:47] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:54:47] local.INFO: html  
+[2022-10-20 14:54:47] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:55:13] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:13] local.INFO: url:  
+[2022-10-20 14:55:13] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:55:13] local.INFO: html  
+[2022-10-20 14:55:13] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 14:55:14] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 14:55:14] local.INFO: url:  
+[2022-10-20 14:55:14] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 14:55:14] local.INFO: html  
+[2022-10-20 14:55:14] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:02:33] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:33] local.INFO: url:  
+[2022-10-20 15:02:33] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:02:33] local.INFO: html  
+[2022-10-20 15:02:33] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:02:46] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:02:46] local.INFO: url:  
+[2022-10-20 15:02:46] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:02:46] local.INFO: html  
+[2022-10-20 15:02:46] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:11:56] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:11:56] local.INFO: url:  
+[2022-10-20 15:11:56] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:11:56] local.INFO: html  
+[2022-10-20 15:11:56] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:12:54] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:12:54] local.INFO: url:  
+[2022-10-20 15:12:54] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:12:54] local.INFO: html  
+[2022-10-20 15:12:54] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:13:32] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:13:32] local.INFO: url:  
+[2022-10-20 15:13:32] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:13:32] local.INFO: html  
+[2022-10-20 15:13:32] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:15:25] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:15:25] local.INFO: url:  
+[2022-10-20 15:15:25] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:15:25] local.INFO: html  
+[2022-10-20 15:15:25] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:16:34] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:16:34] local.INFO: url:  
+[2022-10-20 15:16:34] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:16:34] local.INFO: html  
+[2022-10-20 15:16:34] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:21:52] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:21:52] local.INFO: url:  
+[2022-10-20 15:21:52] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:21:52] local.INFO: html  
+[2022-10-20 15:21:52] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:23:29] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:23:29] local.INFO: url:  
+[2022-10-20 15:23:29] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:23:29] local.INFO: html  
+[2022-10-20 15:23:29] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:30:21] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:30:21] local.INFO: url:  
+[2022-10-20 15:30:21] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:30:21] local.INFO: html  
+[2022-10-20 15:30:21] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:44:28] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:44:28] local.INFO: url:  
+[2022-10-20 15:44:28] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:44:28] local.INFO: html  
+[2022-10-20 15:44:28] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/bootstrap/css/bootstrap.min.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/fontawesome.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/fontawesome.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/templatemo-cyborg-gaming.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/owl.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/owl.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/css/animate.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/statics/css/animate.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/css/app.css  
+[2022-10-20 15:45:42] local.INFO: <link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><link rel="stylesheet" href="http://127.0.0.1:5173/resources/css/app.css" />  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/jquery/jquery.min.js"></script>  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/statics/bootstrap/js/bootstrap.min.js"></script>  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/@vite/client  
+[2022-10-20 15:45:42] local.INFO: url:  
+[2022-10-20 15:45:42] local.INFO: http://127.0.0.1:5173/resources/js/app.js  
+[2022-10-20 15:45:42] local.INFO: html  
+[2022-10-20 15:45:42] local.INFO: <script type="module" src="http://127.0.0.1:5173/@vite/client"></script><script type="module" src="http://127.0.0.1:5173/resources/js/app.js"></script>  

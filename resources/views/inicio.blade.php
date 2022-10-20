@@ -10,13 +10,16 @@
 
     <title>Pokegrid - Jsierra</title>
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{ asset('statics/bootstrap/css/bootstrap.min.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('statics/css/fontawesome.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('statics/css/templatemo-cyborg-gaming.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('statics/css/owl.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('statics/css/animate.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('build/assets/app.a0a1e7d8.css') }}"> 
+    @vite('resources/statics/bootstrap/css/bootstrap.min.css')
+    @vite('resources/statics/css/fontawesome.css')
+    @vite('resources/statics/css/templatemo-cyborg-gaming.css')
+    @vite('resources/statics/css/owl.css')
+    @vite('resources/statics/css/animate.css')
+
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    @vite('resources/css/app.css')
   </head>
 
 <body>
@@ -24,10 +27,10 @@
   
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('statics/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('statics/bootstrap/js/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('build/assets/app.522f897a.js') }}"></script>
-  <script src="{{ asset('build/assets/app.a0a1e7d8.js') }}"></script>
+  @vite('resources/statics/jquery/jquery.min.js')
+  @vite('resources/statics/bootstrap/js/bootstrap.min.js')
+  @vite('resources/js/app.js')
+
   </body>
 
 </html>

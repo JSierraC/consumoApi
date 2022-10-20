@@ -5,7 +5,7 @@
                   <h6>Welcome To Pokegrid</h6>
                   <h4><em>Browse</em> Our Popular Games Here</h4>
                   <div class="main-button">
-                    <a href="browse.html">Browse Now</a>
+                    <router-link to="/register" >Register Now</router-link>
                   </div>
                 </div>
                 <br/>

@@ -10,13 +10,16 @@
 
     <title>Pokegrid - Jsierra</title>
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="<?php echo e(asset('statics/bootstrap/css/bootstrap.min.css')); ?>"> 
-    <link rel="stylesheet" href="<?php echo e(asset('statics/css/fontawesome.css')); ?>"> 
-    <link rel="stylesheet" href="<?php echo e(asset('statics/css/templatemo-cyborg-gaming.css')); ?>"> 
-    <link rel="stylesheet" href="<?php echo e(asset('statics/css/owl.css')); ?>"> 
-    <link rel="stylesheet" href="<?php echo e(asset('statics/css/animate.css')); ?>"> 
-    <link rel="stylesheet" href="<?php echo e(asset('build/assets/app.a0a1e7d8.css')); ?>"> 
+    <?php echo app('Illuminate\Foundation\Vite')('resources/statics/bootstrap/css/bootstrap.min.css'); ?>
+    <?php echo app('Illuminate\Foundation\Vite')('resources/statics/css/fontawesome.css'); ?>
+    <?php echo app('Illuminate\Foundation\Vite')('resources/statics/css/templatemo-cyborg-gaming.css'); ?>
+    <?php echo app('Illuminate\Foundation\Vite')('resources/statics/css/owl.css'); ?>
+    <?php echo app('Illuminate\Foundation\Vite')('resources/statics/css/animate.css'); ?>
+
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    <?php echo app('Illuminate\Foundation\Vite')('resources/css/app.css'); ?>
   </head>
 
 <body>
@@ -24,10 +27,10 @@
   
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="<?php echo e(asset('statics/jquery/jquery.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('statics/bootstrap/js/bootstrap.min.js')); ?>"></script>
-  <script src="<?php echo e(asset('build/assets/app.522f897a.js')); ?>"></script>
-  <script src="<?php echo e(asset('build/assets/app.a0a1e7d8.js')); ?>"></script>
+  <?php echo app('Illuminate\Foundation\Vite')('resources/statics/jquery/jquery.min.js'); ?>
+  <?php echo app('Illuminate\Foundation\Vite')('resources/statics/bootstrap/js/bootstrap.min.js'); ?>
+  <?php echo app('Illuminate\Foundation\Vite')('resources/js/app.js'); ?>
+
   </body>
 
 </html>

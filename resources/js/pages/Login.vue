@@ -2,14 +2,13 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <div class="alert alert-danger" role="alert" v-if="error !== null">
-          {{ error }}
-        </div>
-
         <div class="card col-md-8 offset-md-2">
           <div class="card-header bg-info text-white">Login</div>
           <div class="card-body">
             <form>
+              <div class="alert alert-danger" role="alert" v-if="error !== null">
+                {{ error }}
+              </div>
               <div class="form-group row mb-2">
                 <label for="email" class="col-sm-4 col-form-label text-md-right"
                   >E-Mail Address</label
@@ -84,6 +83,7 @@ export default {
   },
   methods: {
     handleSubmit(e) {
+      var self = this;
       e.preventDefault();
       if (this.password.length > 0) {
         axios.get("/sanctum/csrf-cookie").then((response) => {
@@ -101,9 +101,8 @@ export default {
                 this.error = response.data.message;
               }
             })
-            .catch(function (error) {
-              console.error("Error: ", error);
-             // this.error = "Something is wrong";
+            .catch(function (errors) {
+                self.error = errors.response.data.mensaje
             });
         });
       }
